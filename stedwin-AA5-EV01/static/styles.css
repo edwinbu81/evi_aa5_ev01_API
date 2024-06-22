@@ -1,0 +1,96 @@
+/* Estilo general para todo el sitio */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url("{{ url_for('static', filename='fondo.jfif') }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo para el contenido del sitio */
+header, main, footer {
+    background-color: rgba(168, 123, 183, 0.8); /* Fondo semitransparente para la legibilidad del texto */
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el encabezado */
+header {
+    text-align: center;
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: calc(100% - 2rem);
+}
+
+/* Estilo para el contenedor principal */
+main {
+    max-width: 800px;
+}
+
+/* Estilo para los formularios */
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los mensajes */
+p {
+    margin: 1rem 0;
+}
+
+.mensaje {
+    background-color: #ffcccc;
+    color: #cc0000;
+    padding: 0.5rem;
+    border: 1px solid #cc0000;
+    border-radius: 4px;
+}

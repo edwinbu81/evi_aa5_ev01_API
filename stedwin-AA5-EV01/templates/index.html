@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Aplicación</h1>
+    </header>
+    <main>
+        <nav>
+            <a href="{{ url_for('registro') }}">Registro</a><br><br>
+            <a href="{{ url_for('inicio_sesion') }}">Iniciar Sesión</a>
+        </nav>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Aplicación</p>
+    </footer>
+</body>
+</html>
